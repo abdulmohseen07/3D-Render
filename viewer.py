@@ -37,7 +37,7 @@ class Viewer(object):
         glEnable(GL_COLOR_MATERIAL)
         glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE)
         
-        glClearColor(0.4, 0.4, 0.4, 0.0)
+        glClearColor(0.0, 0.0, 0.0, 1.0)
         glClearDepth(1.0)
         
     def init_scene(self):
@@ -106,7 +106,7 @@ class Viewer(object):
         :param grid_size: Size of the grid.
         :param step: Spacing between grid lines.
         """
-        glColor3f(0.5, 0.5, 0.5)  # Light grey color for grid lines
+        glColor3f(1.0, 1.0, 1.0)  # Light grey color for grid lines
         glBegin(GL_LINES)
         
         # Draw vertical lines
